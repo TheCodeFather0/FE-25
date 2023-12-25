@@ -1,0 +1,92 @@
+/* h1 {
+  color: red;
+  text-align: right;
+}
+
+p {
+  color: white;
+  background-color: black;
+} */
+
+/*
+    hey css!
+*/
+
+h1 {
+  text-align: center;
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+  text-decoration: underline wavy red;
+}
+
+h2 {
+  color: gray;
+  /* text-align: left; default */
+  /* text-align: center; */
+  /* text-align: right; */
+  /* background-color: rgba(255, 165, 0, 0.5); */
+}
+
+p {
+  /* text-align: right; */
+  text-align: justify;
+  /* line-height: 30px; */
+}
+
+h3 {
+  color: red;
+  text-align: center;
+}
+
+/* body { */
+/* background-color: #111; */
+/* background-color: rgb(34, 78, 123); */
+
+/* background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg); */
+/* background-repeat: no-repeat; */
+/* background-position: right; */
+
+/* background-size: 300px; */
+/* background:  url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg) no-repeat center; */
+/* } */
+
+h1 {
+  /* text-decoration: overline underline solid; */
+  text-decoration: none;
+  border-top: 2px solid black;
+  border-bottom: 10px dashed red;
+}
+
+div {
+  /* background: url(https://static.vecteezy.com/system/resources/thumbnails/022/575/456/small/chamomile-flower-field-camomile-in-the-nature-field-of-camomiles-at-sunny-day-at-nature-camomile-daisy-flowers-in-summer-day-chamomile-flowers-field-wide-background-in-sun-light-generative-ai-photo.jpg)
+    no-repeat fixed center;
+  background-size: 100%; */
+  background-color: red;
+  /* width: 300px;
+  height: 300px; */
+  /* margin: 100px 0 200px 300px; */
+  /* margin: 100px 300px 200px 400px; */
+  /* margin-left: 100px; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  /* padding-top: ;
+  padding-bottom: ;
+  padding-left: ;
+  padding-right: ; */
+
+  /* padding: 10px; */
+  width: 200px; /* 200 + 50 + 10*/
+  height: 200px; /* 200 + 120 */
+  /* padding: -50px; */
+  /* margin-top: 100px; */
+  /* padding: 100px 50px 20px 10px; */
+  text-align: center;
+  /* margin: 0 auto; */
+  /* margin-left: 583px; */
+}
+
+* {
+  margin: 20px;
+  padding: 0;
+  color: red;
+}
