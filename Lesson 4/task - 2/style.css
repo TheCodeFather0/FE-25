@@ -1,0 +1,12 @@
+div {
+  border: 3px solid #ddd;
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  height: 200px;
+}
+
+img {
+  height: 56px;
+}
