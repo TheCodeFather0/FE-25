@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 800px;
+  margin: 30px auto;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+  border: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #232323;
+  color: white;
+}
+
+td[colspan="2"] {
+  text-align: center;
+}
+
+th:hover,
+td:hover {
+  background-color: #ddd;
+}
+
+header {
+  border-bottom: 1px solid;
+}
+footer {
+  border-top: 1px solid;
+}
+a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.mainSection {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mainSection section {
+  border: 1px solid;
+  padding: 10px;
+  /* background: linear-gradient(to right, yellow 10%, orange); */
+  /* background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 
+  0, 1)); */
+  /* background: radial-gradient(circle, red 60%, blue); */
+  background: linear-gradient(to right, #42275a, #734b6d);
+  width: calc(100% / 4);
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: radial-gradient(circle, yellow, orange);
+  border-radius: 50%;
+  box-shadow: 0 0 10px orange;
+}
+
+.title {
+  text-align: center;
+  /* text-shadow: 0px 0px 3px black; */
+  /* text-shadow: 2px 2px 5px red; */
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: white;
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: lime;
+  /* transform: translate(100%, 50%) rotate(180deg) skew(-40deg); */
+  transition: 0.5s;
+}
+
+.box:hover {
+  transform: translate(100%, 50%) scale(1.2);
+  box-shadow: 0 0 20px lime;
+}
+
+.relative {
+  width: 500px;
+  height: 500px;
+  border: 3px solid;
+  margin: 30px auto;
+  position: relative;
+}
+
+.absolute {
+  width: calc(50% + 5px);
+  height: calc(50% + 5px);
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
