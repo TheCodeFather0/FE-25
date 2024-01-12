@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dərs 8</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div class="box">Hİ FE-25!</div>
+    <button>click me:)</button> -->
+
+    <fieldset>
+      <legend>Qeydiyyat formu</legend>
+      <form>
+        <label for="nameInput">
+          AD:
+          <input
+            type="text"
+            name="ad"
+            minlength="3"
+            maxlength="5"
+            placeholder="adivi yaz qardas!"
+            required
+            id="nameInput"
+          />
+        </label>
+
+        <input type="number" placeholder="age" min="18" max="25" />
+        <input type="email" placeholder="email" required />
+        <input type="password" placeholder="password" id="passwordInput" />
+
+        <label for="male">
+          kisi:<input
+            type="radio"
+            id="male"
+            name="gender"
+            style="display: inline"
+          />
+        </label>
+        <label for="female">
+          qadin:<input
+            type="radio"
+            id="female"
+            name="gender"
+            style="display: inline"
+          />
+        </label>
+
+        <label for="as">
+          as:
+          <input type="checkbox" name="yemek" id="as" style="display: inline" />
+        </label>
+        <label for="dolma">
+          dolma:
+          <input
+            type="checkbox"
+            name="yemek"
+            id="dolma"
+            style="display: inline"
+          />
+        </label>
+
+        <select>
+          <optgroup label="yaxin seherler">
+            <option value="0">Baki</option>
+            <option value="1">Sumqayit</option>
+          </optgroup>
+
+          <optgroup label="uzaq seherler">
+            <option value="2" selected>Gence</option>
+            <option value="3">Samaxi</option>
+          </optgroup>
+        </select>
+
+        <input type="text" list="seherler" />
+        <datalist id="seherler"> </datalist>
+
+        <input type="date" />
+        <input type="time" name="" id="" />
+        <input type="week" name="" id="" />
+        <input type="search" name="" id="" />
+        <input type="range" name="" id="" />
+        <input type="month" name="" id="" />
+        <input type="file" name="" id="" accept=".jpg" required />
+        <input type="color" name="" id="" />
+        <input type="url" name="" id="" />
+        <!-- <input type="submit" value="Göndər" /> -->
+        <button type="submit">submit</button>
+        <button type="menu">reset</button>
+      </form>
+    </fieldset>
+
+    <div>Ra<span>m</span>in</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit libero
+      laudantium provident
+      <span
+        >accusantium, veniam exercitationem earum, consequuntur aperiam ea
+        ipsum</span
+      >
+      ipsa atque quas quisquam vero. Ad iste quos consectetur sapiente?
+    </p>
+
+    <script>
+      const siyahi = [
+        "Baki",
+        "Gence",
+        "Sumqayit",
+        "Samaxi",
+        "Mingecevir",
+        "Yevlax",
+        "Abseron",
+      ];
+      const seherler = document.getElementById("seherler");
+
+      siyahi.sort().forEach((seher) => {
+        seherler.innerHTML += `<option>${seher}</option>`;
+      });
+    </script>
+  </body>
+</html>
