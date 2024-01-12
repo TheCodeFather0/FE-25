@@ -1,0 +1,53 @@
+/* .box {
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+
+button {
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+} */
+
+input {
+  color: red;
+  caret-color: blue;
+  display: block;
+  /* width: 300px; */
+  margin: 10px;
+}
+
+input::placeholder {
+  color: green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+div {
+  font-size: 50px;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
