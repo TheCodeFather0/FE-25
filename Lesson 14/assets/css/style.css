@@ -1,0 +1,186 @@
+:root {
+  --primary: rgba(64, 70, 79, 1);
+  --secondary: #e1b168;
+}
+
+@font-face {
+  font-family: josef;
+  src: url(../fonts/josef/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  padding: 0 20px;
+  max-width: 1320px;
+}
+
+header {
+  background-color: var(--primary);
+}
+
+header a {
+  font-family: josef, sans-serif;
+}
+
+.headerTopContent {
+  border-bottom: 1px solid #5c6168;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.logo {
+  height: 70%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.phoneLink,
+.reservationLink {
+  width: 180px;
+  padding: 15px 0;
+  transition: 0.5s;
+  text-align: center;
+  display: inline-block;
+}
+
+.phoneLink {
+  color: #fff;
+  border: 1px solid var(--secondary);
+}
+
+.phoneLink:hover {
+  color: #292e36;
+  background-color: var(--secondary);
+}
+
+.reservationLink {
+  color: #292e36;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.reservationLink:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+nav a {
+  color: #fff;
+}
+
+.navigation {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navLinks a {
+  margin-right: 20px;
+}
+
+.navigation .navLinks a:hover {
+  color: var(--secondary);
+}
+
+.active {
+  color: var(--secondary);
+}
+
+.socialMediaIcons a {
+  margin-left: 10px;
+}
+
+.mobileNav,
+.mobileMenuLinks {
+  display: none;
+}
+
+.showMobileMenu {
+  display: block;
+}
+
+/*media queries*/
+@media (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .headerTopContent,
+  nav {
+    display: none;
+  }
+
+  .mobileNav {
+    height: 80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobileNav .logo img {
+    width: 100px;
+  }
+
+  .hamburger {
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .mobileMenuLinks {
+    border-top: 1px solid white;
+    padding: 20px 0;
+  }
+  .mobileMenuLinks a {
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .socialMediaIcons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
