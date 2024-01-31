@@ -1,0 +1,45 @@
+#carouselExampleCaptions .carousel-item {
+  position: relative !important;
+  height: 100vh;
+
+  img {
+    height: 100%;
+  }
+}
+
+#carouselExampleCaptions .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+}
+
+.card-text {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.banner {
+  background-image: url(https://e0.pxfuel.com/wallpapers/210/608/desktop-wallpaper-programming-javascript-javascript-code-thumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  color: white;
+  display: grid;
+  place-items: center;
+  letter-spacing: 2px;
+  background-attachment: fixed;
+}

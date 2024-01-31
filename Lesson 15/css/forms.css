@@ -1,0 +1,125 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form input, form .genderList, form select,
+form textarea {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  padding: 5px;
+  resize: none;
+}
+form input:focus, form .genderList:focus, form select:focus,
+form textarea:focus {
+  border: 2px solid blue;
+}
+form .genderList {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+form .genderList input, form .genderList select, form .genderList .genderList {
+  display: inline;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  margin-right: 35px;
+}
+
+.price {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.price::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  transition: 0.3s;
+  background-color: red;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.price:hover::after {
+  width: 100%;
+}
+
+h1 {
+  background-color: black;
+  color: lime;
+  position: relative;
+}
+h1::after {
+  content: "→";
+  transition: 0.5s;
+  position: absolute;
+  left: 8ch;
+}
+h1:hover::after {
+  left: 10ch;
+}
+h1::-moz-selection {
+  background-color: red;
+  color: yellow;
+}
+h1::selection {
+  background-color: red;
+  color: yellow;
+}
+
+.onOf {
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #464343;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.onOf .on::after {
+  content: "ON";
+  border-radius: 10px 0 0 10px;
+}
+.onOf .off::after {
+  content: "OFF";
+  border-radius: 0 10px 10px 0;
+}
+.onOf span {
+  color: white;
+  transition: 0.3s;
+  padding: 5px 10px;
+  position: relative;
+}
+.onOf span::after {
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  position: absolute;
+  transition: 0.5s;
+}
+.onOf input, .onOf form select, form .onOf select, .onOf form .genderList, form .onOf .genderList {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 50%;
+  height: 60%;
+}
+.onOf .onradio {
+  left: 0;
+}
+.onOf .offradio {
+  right: 0;
+}
+.onOf input:checked + span::after, .onOf form select:checked + span::after, form .onOf select:checked + span::after, .onOf form .genderList:checked + span::after, form .onOf .genderList:checked + span::after {
+  background-color: green;
+}/*# sourceMappingURL=forms.css.map */

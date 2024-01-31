@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form {
+  input,
+  textarea {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    padding: 5px;
+    resize: none;
+
+    &:focus {
+      border: 2px solid blue;
+    }
+  }
+  select {
+    @extend input;
+  }
+
+  .genderList {
+    width: fit-content;
+    @extend input;
+
+    input {
+      display: inline;
+      width: fit-content;
+      margin: 0;
+
+      margin-right: 35px;
+    }
+  }
+}
+
+.price {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    transition: 0.3s;
+    background-color: red;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+h1 {
+  background-color: black;
+  color: lime;
+  position: relative;
+
+  &::after {
+    content: "\2192";
+    transition: 0.5s;
+    position: absolute;
+    left: 8ch;
+  }
+
+  &:hover::after {
+    left: 10ch;
+  }
+
+  &::selection {
+    background-color: red;
+    color: yellow;
+  }
+}
+
+.onOf {
+  margin: 50px auto;
+  width: fit-content;
+  background-color: #464343;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+
+  .on::after {
+    content: "ON";
+    border-radius: 10px 0 0 10px;
+  }
+  .off::after {
+    content: "OFF";
+    border-radius: 0 10px 10px 0;
+  }
+
+  span {
+    color: white;
+    transition: 0.3s;
+    padding: 5px 10px;
+    position: relative;
+
+    &::after {
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      position: absolute;
+      transition: 0.5s;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 50%;
+    height: 60%;
+  }
+  .onradio {
+    left: 0;
+  }
+
+  .offradio {
+    right: 0;
+  }
+
+  input:checked + span::after {
+    background-color: green;
+  }
+}
