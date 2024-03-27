@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid;
+        display: inline-block;
+      }
+
+      .red {
+        background-color: red;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      .bomb {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+      }
+      .light,
+      .light * {
+        background-color: #fff;
+        color: #212121;
+      }
+
+      .dark,
+      .dark * {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button id="btn">Click me :) </button>
+    <h1 id="h1"></h1> -->
+
+    <!-- <audio src="bombsound.mp3" id="bombsound" controls></audio> -->
+    <!-- <div class="btn red" data-color="red"></div>
+    <div class="btn yellow" data-color="yellow"></div>
+    <div class="btn green" data-color="green"></div>
+    <div class="btn blue" data-color="blue"></div>
+
+    <h2>
+      <span id="hour"></span>: <span id="minute"></span>:
+      <span id="second"></span>
+    </h2> -->
+
+    <div class="form">
+        <input type="text" placeholder="username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div class="content">
+      <button id="modeChangerBtn"></button>
+      <button id="clearStorageBtn">clear storage</button>
+      <h1 id="title"></h1>
+      <button id="logoutBtn">logout</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        mollitia asperiores illo iure odio voluptatum. Quae, aliquam? Rem cum
+        quibusdam amet modi nihil velit perferendis iste? Commodi iure ab
+        possimus?
+      </p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

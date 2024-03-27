@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            gap: 20px;
+            align-items: center;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        li {
+            padding: 10px;
+            background-color: red;
+            margin: 10px;
+        }
+
+            #blueBox {
+                width: 500px;
+                height: 500px;
+                background-color: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #redBox {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+
+            .todo {
+                background-color: green;
+                margin: 10px;
+            }
+
+            .card {
+                border: 1px solid blue;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box">
+        <h2>Login</h2>
+        <input type="text" placeholder="email">
+        <input type="password" placeholder="pass">
+        <button id="btn">submit</button>
+    </div> -->
+<!-- 
+    <div id="blueBox">
+        <div id="redBox"></div>
+    </div> -->
+
+
+    <!-- <form id="form">
+        <input type="text" placeholder="username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <input type="submit" value="Submit" id="submitBtn">
+    </form> -->
+
+    <div class="cards" id="cards"   >
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
