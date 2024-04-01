@@ -11,3 +11,24 @@
     border: 1px solid green;
     border-radius: 50%;
 }
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #212121;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav div:first-child {
+    font-size: 30px;
+}
+
+nav div:last-child a {
+    margin-left: 20px;
+}
