@@ -10,12 +10,23 @@ let user = localStorage.getItem("user") || false;
 const checkUser = () => {
   if (user) {
     userBox.innerHTML = `
-              <a href="./addCar.html" class="btn btn-success btn-lg" id="registerBtn">Avtomobil əlavə et</a>
-              <button id="logOutButton" class="btn btn-danger btn-lg ">Çıxış et</button>`;
+              <a href="./addCar.html?username=${user}" class="btn btn-success btn-lg" id="registerBtn">Avtomobil əlavə et</a>
+             <div class="openUserInfo" onclick="showModal()">
+                <img class="avatar" src="https://st.depositphotos.com/1779253/5140/v/950/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg"/><span class="username">${user}</span>
+             </div>
+             <div class="userModal">
+             <h4>${user}</h4>
+             <button id="logOutButton" class="btn btn-danger btn-lg ">Çıxış et</button>
+           </div>`;
   } else {
     userBox.innerHTML = `<a href="#" class="btn btn-success btn-lg" id="loginBtn">Giriş</a>
     <a href="./register.html" class="btn btn-success btn-lg" id="registerBtn">Qeydiyyat</a>`;
   }
+};
+
+const showModal = () => {
+  const userModal = document.querySelector(".userModal");
+  userModal.classList.toggle("showUserModal");
 };
 checkUser();
 
@@ -26,10 +37,10 @@ checkUser();
 const getData = async () => {
   const { data } = await axios(url + "allCars");
   data.forEach(
-    ({ marka, model, image, price, currency, year, engine, mileage, date }) => {
+    ({ marka, model, image, price, currency, year, engine, mileage, date,id }) => {
       carsContainer.innerHTML += `<div class="col-3 my-3">
         <div class="border p-0 rounded car_box position-relative">
-        <a href="https://google.com" class="car_detail_link"></a>
+        <a href="./carDetail.html?id=${id}" class="car_detail_link"></a>
         <img class="car_image rounded-top" src="${image}">
        
         <div class="p-2">
@@ -78,12 +89,10 @@ if (!user) {
         }
       });
       if (currentUser) {
-        Swal.fire("ugurla giris edildi");
-        localStorage.setItem("user", true);
+        localStorage.setItem("user", currentUser.username);
+        console.log(currentUser);
         checkUser();
-        setTimeout(() => {
-          location.reload();
-        }, 1500);
+        location.reload();
       } else {
         Swal.fire("istifadeci adi ve ya sifre yalnisdir");
       }
@@ -92,8 +101,8 @@ if (!user) {
 } else {
   const logOutButton = document.getElementById("logOutButton");
   logOutButton.addEventListener("click", () => {
-    localStorage.setItem("user",false)
-    localStorage.removeItem('user')
+    localStorage.setItem("user", false);
+    localStorage.removeItem("user");
     user = localStorage.getItem("user") || false;
     location.reload();
     checkUser();

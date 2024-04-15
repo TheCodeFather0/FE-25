@@ -1,68 +1,42 @@
 {
   "allCars": [
     {
-      "id": "1",
-      "marka": "Mercedess",
-      "model": "w210",
-      "year": 2002,
-      "engine": "220L",
-      "price": 12000,
-      "currency": "AZN",
-      "mileage": "175000KM",
+      "id": "6560",
+      "marka": "mercedess",
+      "model": "mercedess",
+      "year": "2002",
+      "engine": "2",
+      "price": "2220",
+      "currency": "azn",
+      "mileage": "52651",
       "date": "bu gun 17:00",
-      "image": "https://turbo.azstatic.com/uploads/f660x496/2024%2F03%2F13%2F23%2F54%2F06%2F5b84835a-52af-43a7-8d40-68f7222139b8%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg",
+      "image": "1a6sAsa1sa",
       "likes": 0
     },
     {
-      "id": "2",
-      "marka": "Mercedess",
-      "model": "w210",
-      "year": 2002,
-      "engine": "220L",
-      "price": 12000,
-      "currency": "AZN",
-      "mileage": "175000KM",
+      "id": 670,
+      "marka": "sasa",
+      "model": "sasas",
+      "year": "",
+      "engine": "",
+      "price": "",
+      "currency": "",
+      "mileage": "",
       "date": "bu gun 17:00",
-      "image": "https://turbo.azstatic.com/uploads/f660x496/2024%2F03%2F13%2F23%2F54%2F06%2F5b84835a-52af-43a7-8d40-68f7222139b8%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg",
+      "image": "",
       "likes": 0
     },
     {
-      "id": "3",
-      "marka": "Mercedess",
-      "model": "w210",
-      "year": 2002,
-      "engine": "220L",
-      "price": 12000,
-      "currency": "AZN",
-      "mileage": "175000KM",
+      "id": 1713201304775,
+      "marka": "ssasasas",
+      "model": "",
+      "year": "",
+      "engine": "",
+      "price": "",
+      "currency": "",
+      "mileage": "",
       "date": "bu gun 17:00",
-      "image": "https://turbo.azstatic.com/uploads/f660x496/2024%2F03%2F13%2F23%2F54%2F06%2F5b84835a-52af-43a7-8d40-68f7222139b8%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg",
-      "likes": 0
-    },
-    {
-      "id": "4",
-      "marka": "Mercedess",
-      "model": "w210",
-      "year": 2002,
-      "engine": "220L",
-      "price": 12000,
-      "currency": "AZN",
-      "mileage": "175000KM",
-      "date": "bu gun 17:00",
-      "image": "https://turbo.azstatic.com/uploads/f660x496/2024%2F03%2F13%2F23%2F54%2F06%2F5b84835a-52af-43a7-8d40-68f7222139b8%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg",
-      "likes": 0
-    },
-    {
-      "id": "5",
-      "marka": "Mercedess",
-      "model": "w210",
-      "year": 2002,
-      "engine": "220L",
-      "price": 12000,
-      "currency": "AZN",
-      "mileage": "175000KM",
-      "date": "bu gun 17:00",
-      "image": "https://turbo.azstatic.com/uploads/f660x496/2024%2F03%2F13%2F23%2F54%2F06%2F5b84835a-52af-43a7-8d40-68f7222139b8%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg",
+      "image": "",
       "likes": 0
     }
   ],
@@ -71,12 +45,57 @@
       "id": "0",
       "username": "Kamran",
       "password": "kamran123",
-      "cars": []
+      "cars": [
+        {
+          "marka": "mercedess",
+          "model": "mercedess",
+          "year": "2002",
+          "engine": "2",
+          "price": "2220",
+          "currency": "azn",
+          "mileage": "52651",
+          "date": "bu gun 17:00",
+          "image": "1a6sAsa1sa",
+          "likes": 0
+        },
+        {
+          "id": 670,
+          "marka": "sasa",
+          "model": "sasas",
+          "year": "",
+          "engine": "",
+          "price": "",
+          "currency": "",
+          "mileage": "",
+          "date": "bu gun 17:00",
+          "image": "",
+          "likes": 0
+        },
+        {
+          "id": 1713201304775,
+          "marka": "ssasasas",
+          "model": "",
+          "year": "",
+          "engine": "",
+          "price": "",
+          "currency": "",
+          "mileage": "",
+          "date": "bu gun 17:00",
+          "image": "",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": "59fd",
       "username": "yeniuser",
       "password": "123123",
+      "cars": []
+    },
+    {
+      "id": "8b4a",
+      "username": "sa",
+      "password": "sasa",
       "cars": []
     }
   ]
