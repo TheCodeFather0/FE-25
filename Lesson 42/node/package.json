@@ -1,0 +1,18 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "ilk node dersimiz",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "author": "FE-25",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chalk": "^5.3.0",
+    "nodemon": "^3.1.0"
+  }
+}

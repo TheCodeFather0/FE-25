@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContent {
+  padding: 30px;
+  background-color: #ddd;
+}
+
+.container {
+  gap: 10px;
+  display: grid;
+  max-width: 1200px;
+  margin: 10px auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container .card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid blue;
+}
