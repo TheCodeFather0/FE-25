@@ -28,3 +28,17 @@
 .info {
   margin-top: 50px;
 }
+
+.dark, .dark * {
+  background-color: #212121;
+  color: #fff;
+}
+
+.light, .light * {
+  background-color: #fff;
+  color: #212121;
+}
+
+* {
+  margin: 20px;
+}
