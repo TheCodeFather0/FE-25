@@ -1,0 +1,23 @@
+:root {
+  --primary: #1c1e53;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.ourWorkBtn {
+  color: black;
+  padding: 12px 20px;
+  margin-right: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #FCD980;
+}
