@@ -1,11 +1,9 @@
-import React from 'react'
-import WebRoutes from './Components/WebRoutes'
-import './style.css'
+import React from "react";
+import "./style.css"
+import WebRoutes from "./Components/WebRoutes";
 
 const App = () => {
-  return (
-    <WebRoutes />
-  )
-}
+  return <WebRoutes/>;
+};
 
-export default App
+export default App;

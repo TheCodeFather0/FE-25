@@ -5,3 +5,9 @@ a {
 .active {
     background-color: red;
 }
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
