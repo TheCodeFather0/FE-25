@@ -1,0 +1,47 @@
+
+.todo {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark, .dark * {
+    color: #fff;
+    background-color: #212121;
+}
+
+.light, .light * {
+    color: #212121;
+    background-color: #fff;
+}
+
+
+ul[role="navigation"] {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    background-color: darkblue;
+
+    li {
+        list-style-type: none;
+        background-color: transparent;
+       
+        a {
+            color: white;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background-color: transparent;
+        }
+
+        a[aria-current="page"] {
+            border: 1px solid white;
+        }
+
+    }
+}
