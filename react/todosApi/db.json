@@ -41,11 +41,6 @@
       "isCompleted": false
     },
     {
-      "id": "a477d495-d024-4e90-a2bf-0b4115f413d6",
-      "todo": "saas",
-      "isCompleted": false
-    },
-    {
       "id": "a2da49b0-518e-42a0-a92f-416bbd3ef6df",
       "todo": "s",
       "isCompleted": false
@@ -86,33 +81,13 @@
       "isCompleted": false
     },
     {
-      "id": "65384e2f-bba9-45c4-a9ed-4c14d986a1df",
-      "todo": "as",
-      "isCompleted": false
-    },
-    {
-      "id": "0027d6b7-7caa-49a1-9932-556664678837",
-      "todo": "as",
-      "isCompleted": false
-    },
-    {
-      "id": "5b86e26f-587a-4ced-af7f-fb9fa8343c0b",
-      "todo": "ders oxu",
-      "isCompleted": false
-    },
-    {
-      "id": "2c303447-3183-43ec-b0bc-af9197b603a9",
-      "todo": "ise gedmek lazimdir",
-      "isCompleted": false
-    },
-    {
-      "id": "befe8f4f-bfc4-4778-a984-20be360ed99c",
-      "todo": "eve ged",
-      "isCompleted": false
-    },
-    {
       "id": "2a0fb10e-ad5f-4091-9860-1e12f18386cc",
       "todo": "ders",
+      "isCompleted": false
+    },
+    {
+      "id": "10ff730e-e638-4153-8df7-91df046bbee4",
+      "todo": "salam olsin",
       "isCompleted": false
     }
   ]
