@@ -13,6 +13,10 @@ export default function RootLayout({ children }: IProps) {
           <Navbar />
         </header>
         <main>{children}</main>
+
+        <footer>
+          <h2 className="bg-stone-900 text-white py-3 text-center">footer</h2>
+        </footer>
       </body>
     </html>
   );

@@ -14,9 +14,10 @@ const Page = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const { products }: { products: IProduct[] } = await getData(
-          "https://dummyjson.com/products"
+        const products : IProduct[] = await getData(
+          "http://localhost:3001/products"
         );
+        
         setProducts(products);
       } catch (error) {
         console.error("Failed to fetch products:", error);
